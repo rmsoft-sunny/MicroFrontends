@@ -1,10 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-  swcMinify: true,
-  async rewites() {
-    return [];
-  },
+module.exports = {
+  output: "standalone",
 };
-
-export default nextConfig;

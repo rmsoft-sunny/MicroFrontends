@@ -1,7 +1,8 @@
 export default function Home() {
   return (
     <div>
-      <button>HOME</button>
+      <p>안녕하세요.</p>
+      <p>테스트입니다.</p>
     </div>
   );
 }

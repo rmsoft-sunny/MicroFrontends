@@ -8,7 +8,7 @@ node {
      }
      stage('Push image') {
                 script {
-                    sh 'docker run -d -p 3000:3000 eunseonjeong/clive-trans'
+                    sh 'docker run -d -p 18000:18000 eunseonjeong/clive-trans'
                 }
      }
  }

@@ -1,4 +1,13 @@
-FROM ubuntu:18.04
-RUN ln -sf /usr/share/zoneinfo/Asia/Seoul /etc/localtime
-RUN apt upgrade -y
-RUN apt-get update -y
+FROM node:18-alpine AS base
+
+WORKDIR /app
+
+COPY package*.json .
+
+RUN npm install
+
+COPY . .
+
+EXPOSE 3000
+
+CMD ["npm" , "run", "start"]

@@ -8,11 +8,11 @@ node {
      }
      stage('Push image') {
        
-     
+       steps {
                 script {
                     sh 'docker run -d eunseonjeong/clive-trans ./var/lib/jenkins/'
                 }
-      
+            }
      }
  }
 

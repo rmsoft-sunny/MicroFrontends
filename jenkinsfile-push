@@ -7,12 +7,9 @@ node {
          app = docker.build("eunseonjeong/clive-trans")
      }
      stage('Push image') {
-       
-       steps {
                 script {
-                    sh 'docker run -d eunseonjeong/clive-trans ./var/lib/jenkins/'
+                    sh 'docker run -d eunseonjeong/clive-trans -w /var/lib/jenkins/'
                 }
-            }
      }
  }
 

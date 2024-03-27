@@ -4,11 +4,11 @@ node {
      }
 
      stage('Build image') {
-         app = docker.build("eunseonjeong/clive-trans")
+         app = docker.build("eunseonjeong/clive-trans") //이미지 이름 설정
      }
      stage('Push image') {
                 script {
-                    sh 'docker run -d -p 18000:18000 eunseonjeong/clive-trans'
+                    sh 'docker run -d -p 18000:18000 eunseonjeong/clive-trans' //이미지 이름 설정  (동일하게 작성해야함)
                 }
      }
  }

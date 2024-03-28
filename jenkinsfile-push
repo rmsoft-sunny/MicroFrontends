@@ -2,20 +2,37 @@ node {
      stage('Clone repository') {
          checkout scm
      }
-
+      stage('Deploy Pod') {
+            steps {
+                script {
+                    // Kubernetes Pod 생성
+                    def podYaml = readYaml(file: 'test.yaml')
+                    def podName = podYaml.metadata.name
+                    sh "kubectl apply -f test.yaml"
+                    
+                    // 생성된 Pod 확인
+                    sh "kubectl get pod $podName"
+                }
+            }
+        }
      stage('Build image') {
+        // Docker 이미지 빌드
          app = docker.build("eunseonjeong/clive-trans")
      }
-         stage('Build') {
-            container('test') {
-                sh "echo pipeline test"
-            }
-    
- }
      stage('Push image') {
                 script {
+                    // Docker 이미지 푸시
                     sh 'docker compose up -d'
                 }
      }
-  
-
+    post {
+            always {
+                        // 모든 작업이 완료되면 Kubernetes Pod 삭제
+                script {
+                    def podYaml = readYaml(file: 'test.yaml')
+                    def podName = podYaml.metadata.name
+                    sh "kubectl delete pod $podName"
+                }
+            }
+        }
+}

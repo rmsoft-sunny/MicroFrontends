@@ -11,4 +11,10 @@ node {
                     sh 'docker compose up -d'
                 }
      }
+  
+    stage('Build') {
+            container('test') {
+                sh "echo pipeline test"
+            }
+    
  }

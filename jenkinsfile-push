@@ -25,14 +25,4 @@ node {
                     sh 'docker compose up -d'
                 }
      }
-    post {
-            always {
-                        // 모든 작업이 완료되면 Kubernetes Pod 삭제
-                script {
-                    def podYaml = readYaml(file: 'test.yaml')
-                    def podName = podYaml.metadata.name
-                    sh "kubectl delete pod $podName"
-                }
-            }
-        }
 }

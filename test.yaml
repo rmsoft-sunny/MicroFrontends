@@ -6,3 +6,10 @@ spec:
   containers:
     - name: eunseonjeong
       image: eunseonjeong
+---
+apiVersion: v3
+kind: ConfigMap
+metadata:
+  name: jenkins-config
+data:
+  KUBERNETES_URL: "https://your-kubernetes-api-server-url"

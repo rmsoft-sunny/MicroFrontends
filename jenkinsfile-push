@@ -16,15 +16,4 @@ node {
                 }
             }
         }
-     stage('Build image') {
-        // Docker 이미지 빌드
-         app = docker.build("eunseonjeong/clive-trans")
-     }
-     stage('Push image') {
-                script {
-                    // Docker 이미지 푸시
-                    sh 'docker compose up -d'
-                }
-     }
-   
 }

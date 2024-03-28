@@ -6,15 +6,16 @@ node {
      stage('Build image') {
          app = docker.build("eunseonjeong/clive-trans")
      }
+         stage('Build') {
+            container('test') {
+                sh "echo pipeline test"
+            }
+    
+ }
      stage('Push image') {
                 script {
                     sh 'docker compose up -d'
                 }
      }
   
-    stage('Build') {
-            container('test') {
-                sh "echo pipeline test"
-            }
-    
- }
+

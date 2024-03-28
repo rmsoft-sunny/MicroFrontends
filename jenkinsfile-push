@@ -6,14 +6,12 @@ node {
             steps {
                 script {
                     // Kubernetes Pod 생성 + 고유 IP를 할당
-                    def podYaml = readYaml(file: 'test.yaml')
-                    def podName = podYaml.metadata.name
-                    sh "kubectl apply -f test.yaml"
+                   sh "kubectl apply -f echo-pod.yml"
                     
                     // 생성된 Pod 확인
-                    sh "kubectl get pod $podName"
-                    // Pod 연결
-                    sh "kubectl exec -it $podName -- /bin/sh -c 'echo Hello, world!'"
+                    sh "kubectl get pod"
+                    // 컨테이너에 접속
+                    sh "kubectl exec -it echo -- sh'"
 
                 }
             }

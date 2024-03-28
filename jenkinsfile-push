@@ -8,9 +8,7 @@ node {
      }
      stage('Push image') {
                 script {
-                    sh 'docker run -d -p 18000:18000 eunseonjeong/clive-trans'
+                    sh 'docker-compose up -d'
                 }
      }
  }
-
- //도커 run -> build 된 파일 실행

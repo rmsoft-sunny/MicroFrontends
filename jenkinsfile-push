@@ -2,17 +2,7 @@ node {
      stage('Clone repository') {
          checkout scm
      }
-     stage('Build image') {
-        // Docker 이미지 빌드
-         app = docker.build("eunseonjeong/clive-trans")
-     }
-     stage('Push image') {
-                script {
-                    // Docker 이미지 푸시
-                    sh 'docker compose up -d'
-                }
-     }
-       stage('Deploy Pod') {
+         stage('Deploy Pod') {
             steps {
                 script {
                     // Kubernetes Pod 생성 + 고유 IP를 할당
@@ -28,4 +18,15 @@ node {
                 }
             }
         }
+     stage('Build image') {
+        // Docker 이미지 빌드
+         app = docker.build("eunseonjeong/clive-trans")
+     }
+     stage('Push image') {
+                script {
+                    // Docker 이미지 푸시
+                    sh 'docker compose up -d'
+                }
+     }
+   
 }

@@ -3,16 +3,6 @@
          checkout scm
      }
      stage('Build image') {
-           def dockerBuildArgs = [
-            "NEXT_PUBLIC_CLIENT=http://dev-rm-seoul.iptime.org:32000", 
-        ]
-         // env 파일이 존재하면 도커 빌드에 포함합니다.
-        def envFilePath = "source/.env" // 실제 env 파일의 경로
-        if (fileExists(envFilePath)) {
-            dockerBuildArgs << "--build-arg" << "env_file=${envFilePath}"
-        }
-        
-        // 도커 이미지를 빌드합니다. 환경 변수와 함께.
-        app = docker.build("eunseonjeong/clive-trans:$BUILD_NUMBER", "--build-arg", dockerBuildArgs.join(' '))
-    }
+         app = docker.build("eunseonjeong/clive-trans:$BUILD_NUMBER")
      }
+}

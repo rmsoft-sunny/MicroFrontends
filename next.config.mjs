@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: "standalone",
   env: {
     CLIENT: process.env.NEXT_PUBLIC_CLIENT,
     ADMIN: process.env.NEXT_PUBLIC_ADMIN,
@@ -40,17 +41,17 @@ const nextConfig = {
       {
         basePath: false,
         source: "/api/project/:code/:path*",
-        destination: `http://dev-rm-seoul.iptime.org:32000/:code/prj/v1/api/:path*`,
+        destination: `${process.env.NEXT_PUBLIC_CLIENT}/:code/prj/v1/api/:path*`,
       },
       {
         basePath: false,
         source: "/api/contents/:path*",
-        destination: `http://dev-rm-seoul.iptime.org:32000/contents/v1/api/:path*`,
+        destination: `${process.env.NEXT_PUBLIC_CLIENT}/contents/v1/api/:path*`,
       },
       {
         basePath: false,
         source: "/api/finance/:path*",
-        destination: `http://dev-rm-seoul.iptime.org:32000/finance/v1/api/:path*`,
+        destination: `${process.env.NEXT_PUBLIC_CLIENT}/finance/v1/api/:path*`,
       },
     ];
   },

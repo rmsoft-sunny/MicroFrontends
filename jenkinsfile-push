@@ -2,15 +2,20 @@ node {
      stage('Clone repository') {
          checkout scm
      }
+     stage('Checkout') {
+       git branch: 'develop', credentialsId: '3906d97d-1905-4292-baf6-600b611d06ce', url: 'git@github.com:rmsoft-sunny/docker_pipeline.git'
+   }
     stage('Deploy Pod') {
     steps {
         script {
             // Kubernetes Pod 생성 + 고유 IP를 할당
-            sh "kubectl apply -f echo-Ip.yml"
+            sh "kubectl apply -f echo-pod.yml"
+            
             // 생성된 Pod 확인
             sh "kubectl get pod"
             // 컨테이너에 접속
             sh "kubectl exec -it echo -- sh'"
+
         }
     }
 }

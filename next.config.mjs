@@ -25,17 +25,17 @@ const nextConfig = {
       {
         basePath: false,
         source: "/api/login",
-        destination: `http://dev-rm-seoul.iptime.org:32000/client/v1/api/auth/login`,
+        destination: `${process.env.NEXT_PUBLIC_CLIENT}/client/v1/api/auth/login`,
       },
       {
         basePath: false,
         source: "/api/logout",
-        destination: `http://dev-rm-seoul.iptime.org:32000/client/v1/api/auth/logout`,
+        destination: `${process.env.NEXT_PUBLIC_CLIENT}/client/v1/api/auth/logout`,
       },
       {
         basePath: false,
         source: "/api/client/:path*",
-        destination: `http://dev-rm-seoul.iptime.org:32000/client/v1/api/:path*`,
+        destination: `${process.env.NEXT_PUBLIC_CLIENT}/client/v1/api/:path*`,
       },
       {
         basePath: false,

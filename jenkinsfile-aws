@@ -1,19 +1,8 @@
-node {
+ node {
      stage('Clone repository') {
          checkout scm
      }
-
      stage('Build image') {
-         app = docker.build("********.dkr.ecr.ap-northeast-2.amazonaws.com/teichae")
+         app = docker.build("eunseonjeong/clive-trans:$BUILD_NUMBER")
      }
-
-     stage('Push image') {
-         sh 'rm  ~/.dockercfg || true'
-         sh 'rm ~/.docker/config.json || true'
-         
-         docker.withRegistry('https://********.dkr.ecr.ap-northeast-2.amazonaws.com', 'ecr:ap-northeast-2:teichae-ecr-credentials') {
-             app.push("${env.BUILD_NUMBER}")
-             app.push("latest")
-     }
-  }
 }

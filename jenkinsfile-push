@@ -2,18 +2,15 @@ node {
      stage('Clone repository') {
          checkout scm
      }
-         stage('Deploy Pod') {
-            steps {
-                script {
-                    // Kubernetes Pod 생성 + 고유 IP를 할당
-                   sh "kubectl apply -f echo-pod.yml"
-                    
-                    // 생성된 Pod 확인
-                    sh "kubectl get pod"
-                    // 컨테이너에 접속
-                    sh "kubectl exec -it echo -- sh'"
 
+     stage('Build image') {
+         app = docker.build("eunseonjeong/clive-trans") //이미지 이름 설정
+     }
+     stage('Push image') {
+                script {
+                    sh 'docker run -d -p 18000:18000 eunseonjeong/clive-trans' //이미지 이름 설정  (동일하게 작성해야함)
                 }
-            }
-        }
-}
+     }
+ }
+
+ //도커 run -> build 된 파일 실행

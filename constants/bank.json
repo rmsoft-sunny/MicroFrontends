@@ -1,0 +1,320 @@
+[
+  {
+    "bankTitle": "산업은행",
+    "bankCode": "SU",
+    "bankNumber": 0,
+    "bankId": "002"
+  },
+  {
+    "bankTitle": "기업은행",
+    "bankCode": "KU",
+    "bankNumber": 1,
+    "bankId": "003"
+  },
+  {
+    "bankTitle": "국민은행",
+    "bankCode": "KM",
+    "bankNumber": 2,
+    "bankId": "004"
+  },
+  {
+    "bankTitle": "수협은행",
+    "bankCode": "SUH",
+    "bankNumber": 3,
+    "bankId": "007"
+  },
+  {
+    "bankTitle": "수협중앙회",
+    "bankCode": "SUHJ",
+    "bankNumber": 4,
+    "bankId": "007"
+  },
+  {
+    "bankTitle": "농협은행",
+    "bankCode": "NH",
+    "bankNumber": 5,
+    "bankId": "011"
+  },
+  {
+    "bankTitle": "농협중앙회",
+    "bankCode": "NHJ",
+    "bankNumber": 6,
+    "bankId": "012"
+  },
+  {
+    "bankTitle": "우리은행",
+    "bankCode": "UR",
+    "bankNumber": 7,
+    "bankId": "020"
+  },
+  {
+    "bankTitle": "SC제일은행",
+    "bankCode": "SC",
+    "bankNumber": 8,
+    "bankId": "023"
+  },
+  {
+    "bankTitle": "한국씨티은행",
+    "bankCode": "HC",
+    "bankNumber": 9,
+    "bankId": "027"
+  },
+  {
+    "bankTitle": "대구은행",
+    "bankCode": "DG",
+    "bankNumber": 10,
+    "bankId": "031"
+  },
+  {
+    "bankTitle": "부산은행",
+    "bankCode": "BS",
+    "bankNumber": 11,
+    "bankId": "032"
+  },
+  {
+    "bankTitle": "광주은행",
+    "bankCode": "GJ",
+    "bankNumber": 12,
+    "bankId": "034"
+  },
+  {
+    "bankTitle": "제주은행",
+    "bankCode": "JJ",
+    "bankNumber": 13,
+    "bankId": "035"
+  },
+  {
+    "bankTitle": "전북은행",
+    "bankCode": "JB",
+    "bankNumber": 14,
+    "bankId": "037"
+  },
+  {
+    "bankTitle": "경남은행",
+    "bankCode": "GN",
+    "bankNumber": 15,
+    "bankId": "039"
+  },
+  {
+    "bankTitle": "새마을금고중앙회",
+    "bankCode": "SMGJ",
+    "bankNumber": 16,
+    "bankId": "045"
+  },
+  {
+    "bankTitle": "신협중앙회",
+    "bankCode": "SIHJ",
+    "bankNumber": 17,
+    "bankId": "048"
+  },
+  {
+    "bankTitle": "상호저축은행",
+    "bankCode": "SAH",
+    "bankNumber": 18,
+    "bankId": "050"
+  },
+  {
+    "bankTitle": "HSBC은행",
+    "bankCode": "HSBC",
+    "bankNumber": 19,
+    "bankId": "054"
+  },
+  {
+    "bankTitle": "도이치은행",
+    "bankCode": "DOI",
+    "bankNumber": 20,
+    "bankId": "055"
+  },
+  {
+    "bankTitle": "제이피모간체이스은행",
+    "bankCode": "JPMG",
+    "bankNumber": 21,
+    "bankId": "057"
+  },
+  {
+    "bankTitle": "BOA은행",
+    "bankCode": "BOA",
+    "bankNumber": 22,
+    "bankId": "060"
+  },
+  {
+    "bankTitle": "중국공상은행",
+    "bankCode": "JG",
+    "bankNumber": 23,
+    "bankId": "062"
+  },
+  {
+    "bankTitle": "산림조합중앙회",
+    "bankCode": "SAJH",
+    "bankNumber": 24,
+    "bankId": "064"
+  },
+  {
+    "bankTitle": "우체국",
+    "bankCode": "UCG",
+    "bankNumber": 25,
+    "bankId": "071"
+  },
+  {
+    "bankTitle": "KEB하나은행",
+    "bankCode": "KBE",
+    "bankNumber": 26,
+    "bankId": "081"
+  },
+  {
+    "bankTitle": "신한은행",
+    "bankCode": "SIH",
+    "bankNumber": 27,
+    "bankId": "088"
+  },
+  {
+    "bankTitle": "K뱅크",
+    "bankCode": "K",
+    "bankNumber": 28,
+    "bankId": "089"
+  },
+  {
+    "bankTitle": "카카오뱅크",
+    "bankCode": "KAO",
+    "bankNumber": 29,
+    "bankId": "090"
+  },
+  {
+    "bankTitle": "유안타증권",
+    "bankCode": "UAT",
+    "bankNumber": 30,
+    "bankId": "209"
+  },
+  {
+    "bankTitle": "KB증권",
+    "bankCode": "KBJG",
+    "bankNumber": 31,
+    "bankId": "218"
+  },
+  {
+    "bankTitle": "미래에셋대우",
+    "bankCode": "MR",
+    "bankNumber": 32,
+    "bankId": "238"
+  },
+  {
+    "bankTitle": "삼성증권",
+    "bankCode": "SSJG",
+    "bankNumber": 33,
+    "bankId": "240"
+  },
+  {
+    "bankTitle": "한국투자증권",
+    "bankCode": "HTJG",
+    "bankNumber": 34,
+    "bankId": "243"
+  },
+  {
+    "bankTitle": "NH투자증권",
+    "bankCode": "NHJG",
+    "bankNumber": 35,
+    "bankId": "247"
+  },
+  {
+    "bankTitle": "교보증권",
+    "bankCode": "GBJG",
+    "bankNumber": 36,
+    "bankId": "261"
+  },
+  {
+    "bankTitle": "하이투자증권",
+    "bankCode": "HIJG",
+    "bankNumber": 37,
+    "bankId": "262"
+  },
+  {
+    "bankTitle": "현대차투자증권",
+    "bankCode": "HDJG",
+    "bankNumber": 38,
+    "bankId": "263"
+  },
+  {
+    "bankTitle": "키움증권",
+    "bankCode": "KWJG",
+    "bankNumber": 39,
+    "bankId": "264"
+  },
+  {
+    "bankTitle": "이베스트투자증권",
+    "bankCode": "EBJG",
+    "bankNumber": 40,
+    "bankId": "265"
+  },
+  {
+    "bankTitle": "SK증권",
+    "bankCode": "SKJG",
+    "bankNumber": 41,
+    "bankId": "266"
+  },
+  {
+    "bankTitle": "대신증권",
+    "bankCode": "DSJG",
+    "bankNumber": 42,
+    "bankId": "267"
+  },
+  {
+    "bankTitle": "한화투자증권",
+    "bankCode": "HHJG",
+    "bankNumber": 43,
+    "bankId": "269"
+  },
+  {
+    "bankTitle": "하나금융투자",
+    "bankCode": "HNT",
+    "bankNumber": 44,
+    "bankId": "270"
+  },
+  {
+    "bankTitle": "신한금융투자",
+    "bankCode": "SHT",
+    "bankNumber": 45,
+    "bankId": "278"
+  },
+  {
+    "bankTitle": "동부증권",
+    "bankCode": "DBJG",
+    "bankNumber": 46,
+    "bankId": "279"
+  },
+  {
+    "bankTitle": "유진투자증권",
+    "bankCode": "UJJG",
+    "bankNumber": 47,
+    "bankId": "280"
+  },
+  {
+    "bankTitle": "메리츠종합금융증권",
+    "bankCode": "MRJG",
+    "bankNumber": 48,
+    "bankId": "287"
+  },
+  {
+    "bankTitle": "부국증권",
+    "bankCode": "BGJG",
+    "bankNumber": 49,
+    "bankId": "290"
+  },
+  {
+    "bankTitle": "신영증권",
+    "bankCode": "SYJG",
+    "bankNumber": 50,
+    "bankId": "291"
+  },
+  {
+    "bankTitle": "케이프투자증권",
+    "bankCode": "KFJG",
+    "bankNumber": 51,
+    "bankId": "292"
+  },
+  {
+    "bankTitle": "SBI저축은행",
+    "bankCode": "SBI",
+    "bankNumber": 52,
+    "bankId": "103"
+  }
+]

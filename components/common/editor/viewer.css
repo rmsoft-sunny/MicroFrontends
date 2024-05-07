@@ -1,0 +1,32 @@
+/* 이미지 컴포넌트 관련 설정 */
+span.editor-image {
+  cursor: default;
+  display: inline-block;
+  position: relative;
+  user-select: none;
+}
+
+.editor-image img {
+  max-width: 100%;
+  cursor: default;
+}
+
+.editor-image .image-caption-container .tree-view-output {
+  margin: 0;
+  border-radius: 0;
+}
+
+.editor-image .image-caption-container {
+  display: block;
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid #fff;
+  background-color: rgba(255, 255, 255, 0.9);
+  min-width: 100px;
+  color: #000;
+  overflow: hidden;
+}

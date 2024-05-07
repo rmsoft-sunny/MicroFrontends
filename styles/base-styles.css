@@ -1,0 +1,31 @@
+.titleFont {
+  font-size: x-large;
+  font-weight: 600;
+  color: rgb(30 41 59);
+}
+
+.basicFont {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(30 41 59);
+}
+
+.smallFont {
+  font-size: small;
+  font-weight: 500;
+  color: rgb(30 41 59);
+}
+
+.modalTitleFont {
+  font-size: large;
+  font-weight: 600;
+  color: rgb(30 41 59);
+}
+
+.titleContainer {
+  display: flex;
+  align-items: center;
+  gap: 1;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}

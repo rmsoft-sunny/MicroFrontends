@@ -1,7 +1,0 @@
-version: "3"
-services:
-  master:
-    container_name: master
-    image: eunseonjeong/clive-trans:latest
-    ports:
-      - 18000:18000
